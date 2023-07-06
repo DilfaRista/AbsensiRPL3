@@ -11,12 +11,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button2 = findViewById<Button>(R.id.button2)
-        button2.setOnClickListener{
+        button2.setOnClickListener {
             val intent = Intent(this, BuatAbsensi::class.java)
             startActivity(intent)
+        }
 
         val button = findViewById<Button>(R.id.button1)
-        button.setOnClickListener{
+        button.setOnClickListener {
             val intent = Intent(this, AbsenActivity::class.java)
             startActivity(intent)
         }
